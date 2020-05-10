@@ -1,0 +1,60 @@
+body{
+	background-color:grey;
+}
+#base{
+	width:1100px;
+	height:500px;
+	background-image:url(Colorful-Circle-Simple-Background-Image-1.jpg);
+	margin:60px auto;
+}
+#calc{
+	width:300px;
+	height:442px;
+	background-color:#eaedef;
+	position:relative;
+	margin:10px auto;
+	top:10px;
+	border-radius:5px;
+}
+#result{
+	top:5px;
+	position:relative;
+	height:100px;
+	border-bottom:2px solid;
+}
+#keyboard{
+	height:350px;
+}
+#history{
+	height:10px;
+	margin:0 10px;
+	padding-top:5px;
+	color:#919191;
+	text-align:right;
+	position:relative;
+	font-size:15px;
+}
+#output{
+	text-align:right;
+	position:relative;
+	font-size:25px;
+	padding-top:5px;
+	margin:0 5px;
+}
+.operator ,.number,.empty{
+	width:50px;
+	height:50px;
+	margin:10px;
+	float:left;
+	border-radius:50%;
+	border-width:0;
+	font-weight:bold;
+	font-size:15px;
+}
+.operator{
+	background-color:lightblue;
+	font-size:20px;
+}
+.operator ,.number{
+	cursor:pointer;
+}
