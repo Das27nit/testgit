@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HAPPY STORES!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media screen and (max-width: 584px) {
+.wrapper-1{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ width:100%;
+} 
+.wrapper-1 > div > nav > a {
+ font-size:11px;
+}
+#first{
+ margin:5px;
+ padding:3px;
+font-size:12px;
+}
+#second{
+font-size:11px;
+}
+.wrapper-2{
+ display:grid;
+ grid-template-columns:1fr 1fr 1fr;
+ width:100%;
+}
+ div.box1{
+ margin:10px;
+ text-align:left;
+ grid-column:1/3;
+ padding-left:0em;
+ width:100%;
+}
+  div.box2{
+  margin:5px;
+ grid-column:1/3;
+ display:inline-block;
+  padding:1em 0px 2em 1px;
+  width:100%;
+}
+div.box3{
+ grid-column:1/4;
+ margin:5px;
+ padding-left:5px;
+ width:100%;
+}
+div.box4{
+ grid-column:1/4;
+ margin:5px;
+ padding:0px;
+ width:100%;
+}
+div.box5{
+ grid-column:1/4;
+ margin:5px;
+ padding:10px 10em 10px 10px;
+ width:100%;
+}
+div.box51{
+ margin:5px;
+ grid-column:1/4;
+ padding:10px 20em 10px 10px;
+ width:100%;
+}
+div.box52{
+ margin:5px;
+ grid-column:1/4;
+ align:left;
+ padding:0px 25em 10px 0em;
+ width:100%;
+}
+div.wrapper-3{
+  width:100%;
+}
+th,td{
+ padding:5px;
+ text-align:center;
+ font-size:12px;
+}
+ul{
+overflow:hidden;
+}
+li{
+float:left;
+}
+h1{
+letter-spacing:1px;
+}
+}
+h1{
+letter-spacing:4px;
+}
+.wrapper-1{
+ display:grid;
+ grid-template-columns:2.8fr 1fr;
+ background-color:lightblue;
+ border-bottom:5px solid;
+
+}
+.wrapper-1 > div > nav > a {
+ background-color:darkblue;
+ color:white;
+ border-radius:5px;
+ margin:5px;
+ padding:2px
+}
+
+
+.wrapper-2{
+ display:grid;
+ grid-template-columns:10fr 0.5fr 15fr;
+ background-color:Azure;
+ border-bottom:2px solid;
+}
+ li > a {
+ display:block;
+ background-color:darkblue;
+ align:center;
+ color:white;
+ margin:10px;
+ padding:3px;
+ border-radius:5px;
+}
+.wrapper-3{
+  display:grid;
+  background-color:grey;
+}
+.wrapper-3 > p >a{
+ background-color:black;
+ color:white;
+ margin:10px;
+ padding:7px;
+}
+ 
+.box1{
+ margin:10px;
+ text-align:center;
+ padding-left:16em;
+}
+.box2{
+margin:10px;
+padding-top:3em;
+}
+.box3{
+ grid-column:1/4;
+ margin:5px;
+ padding-left:10px;
+}
+.box4{
+ margin:5px;
+ padding:18px 0 0 3em;
+}
+.box5{
+ margin:5px;
+ padding:10px 10em 10px 10px;
+}
+.box51{
+ margin:5px;
+ padding:10px 20em 10px 10px;
+}
+.box52{
+ margin:5px;
+ padding:10px 25em 10px 5em;
+}
+th,td{
+ padding:10px;
+ text-align:center;
+}
+tr:nth-child(odd){
+background-color:#f2f2f2;
+}
+th{
+ background-color:cadetblue;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper-1">
+<div class="box1"><h1>HAPPY STORES</h1></div>
+<div class="box2"><nav>
+<a href="#">Input</a>  <a href="#">Output</a>  <a href="#">Inventory</a>  <a href="#">Analysis</a>  <a href="#">Profile</a>  </nav>
+</div>
+</div>
+
+<div class="wrapper-2">
+
+<div class="box3"><h2>INPUT</h2>
+</div>
+
+<div class="box4">
+<nav>
+<ul style="list-style-type:none;">
+<li><a href="#">New</a></li>
+<li><a href="#">Save</a></li>
+<li><a href="#">Recent</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="box5">
+<div style="overflow-x:auto;">
+<form action="#">
+ <fieldset>
+ Agency Name:<br><input type="text"><br><br>
+ Agency Tax :<br><input type="text"><br><br>
+ E-mail     :<br><input type="text"><br>
+
+ </fieldset>
+ <fieldset>
+ <table>
+ <tr>
+ <th>Product Name</th>
+ <th>Quantity</th>
+ <th>Unit</th>
+ <th>Mfg Date</th>
+ <th>Expiry Date</th>
+ <th>Purchase</th>
+ <th>Status</th>
+ </tr>
+  
+ <tr>
+ <td><input type="text"></td>
+ <td><input type="number"></td>
+ <td><select id="Unit" name="Unit">
+   <option value="packets">packets</option>
+   <option value="kg">kg</option>
+   <option value="gram">gram</option>
+   <option value="litre">litre</option>
+</td>
+ <td><input type="date"></td>
+ <td><input type="date"></td>
+ <td><input type="text"></td>
+ <td><select id="Status" name="Status">
+   <option value="None">None</option>
+   <option value="Inventory">Inventory</option>
+   <option value="Not-Arrived">Not-Arrived</option>
+   <option value="Expired">Expired</option>
+   <option value="Damaged">Damaged</option>
+</td>
+ </tr>
+
+ <tr>
+ <td><input type="text"></td>
+ <td><input type="number"></td>
+ <td><select id="Unit" name="Unit">
+   <option value="packets">packets</option>
+   <option value="kg">kg</option>
+   <option value="gram">gram</option>
+   <option value="litre">litre</option>
+</td>
+ <td><input type="date"></td>
+ <td><input type="date"></td>
+ <td><input type="text"></td>
+<td><select id="Status" name="Status">
+   <option value="None">None</option>
+   <option value="Inventory">Inventory</option>
+   <option value="Not-Arrived">Not-Arrived</option>
+   <option value="Expired">Expired</option>
+   <option value="Damaged">Damaged</option>
+</td>
+ </tr>
+</table>
+ <br>
+<p><input type="Submit"> <input type="button" value="Add New"> <input type="button" value="Reset"></p>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+
+<div class="wrapper-2">
+<div class="box3"><h2>OUTPUT</h2>
+</div>
+
+<div class="box4">
+<nav>
+<ul style="list-style-type:none;">
+<li><a href="#">New</a></li>
+<li><a href="#">Save</a></li>
+<li><a href="#">Recent</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="box51">
+<div style="overflow-x:auto;">
+<form action="#">
+ <fieldset>
+ Customer Name:<br><input type="text"><br><br>
+ Customer Tax :<br><input type="text"><br><br>
+ E-mail       :<br><input type="text"><br>
+
+ </fieldset>
+ <fieldset>
+ <table>
+ <tr>
+ <th>Product Name</th>
+ <th>Quantity</th>
+ <th>Unit</th>
+ <th>Selling</th>
+ <th>Status</th>
+ </tr>
+  
+ <tr>
+ <td><input type="text"></td>
+ <td><input type="number"></td>
+  <td><select id="Unit" name="Unit">
+   <option value="packets">packets</option>
+   <option value="kg">kg</option>
+   <option value="gram">gram</option>
+   <option value="litre">litre</option>
+</td>
+ <td><input type="text"></td>
+ <td><select id="Status" name="Status">
+   <option value="None">None</option>
+   <option value="Inventory">Inventory</option>
+   <option value="Not-Arrived">Not-Arrived</option>
+   <option value="Expired">Expired</option>
+   <option value="Damaged">Damaged</option>
+</td>
+ </tr>
+
+ <tr>
+ <td><input type="text"></td>
+ <td><input type="number"></td>
+  <td><select id="Unit" name="Unit">
+   <option value="packets">packets</option>
+   <option value="kg">kg</option>
+   <option value="gram">gram</option>
+   <option value="litre">litre</option>
+</td>
+ <td><input type="text"></td>
+ <td><select id="Status" name="Status">
+   <option value="None">None</option>
+   <option value="Inventory">Inventory</option>
+   <option value="Not-Arrived">Not-Arrived</option>
+   <option value="Expired">Expired</option>
+   <option value="Damaged">Damaged</option>
+</td>
+ </tr>
+</table>
+</fieldset><br>
+<p><input type="Submit"> <input type="button" value="Add New"> <input type="button" value="Reset"></p>
+</form></div>
+</div>
+</div>
+
+<div class="wrapper-2">
+<div class="box3"><h2>INVENTORY</h2></div>
+<div class="box4">
+<nav>
+<ul style="list-style-type:none;" id="first">
+<li><a href="#">Monthly Changes</a></li>
+<li><a href="#">Weekly Changes</a></li>
+<li><a href="#">Edit</a></li>
+<li><a href="#">Current</a></li>
+</ul>
+</nav>
+</div>
+<div class="box52">
+ <h3>Current Inventory</h3>
+ <div style="overflow-x:auto;">
+ <form action="#">
+ <table>
+ <tr>
+ <th align="center">Product Name</th>
+ <th align="center">Quantity</th>
+ <th align="center">Unit</th>
+ <th align="center">Expiry</th>
+ </tr>
+ <tr>
+ <td>Potato</td>
+ <td>30</td>
+ <td>kg</td>
+ <td>3 weeks</td>
+ </tr>
+<tr>
+ <td>Choco chips</td>
+ <td>100</td>
+ <td>packets</td>
+ <td>6 months</td>
+ </tr>
+<tr>
+ <td>Rice</td>
+ <td>500</td>
+ <td>kg</td>
+ <td>8 months</td>
+ </tr>
+<tr>
+ <td>Pulses</td>
+ <td>200</td>
+ <td>kg</td>
+ <td>8 months</td>
+ </tr>
+<tr>
+ <td>kesar</td>
+ <td>1000</td>
+ <td>gram</td>
+ <td>2 years</td>
+ </tr>
+</table>
+</form>
+</div>
+</div>
+</div>
+
+<div class="wrapper-3">
+<br><br>
+ <p align="center" id="second">
+<a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Carrers</a></p>
+<br>
+<p align="center">All Rights Reserved @2020</p>
+</div>
+
+</body>
+</html>
